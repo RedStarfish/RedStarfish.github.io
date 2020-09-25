@@ -16,23 +16,16 @@
     <nav class="header">
       <ul>
 	<li><a href="index.html">Home</a></li>
-	<li class="current"><a href="contact.html">Contact</a></li>
-	<li><a href="blog.html">Blog</a></li>
+	<li><a href="contact.html">Contact</a></li>
+	<li class="current"><a href="blog.html">Blog</a><li>
 	<li><a href="subscribe.html">Subscribe</a></li>
       </ul>
     </nav>
 
     <main>
-      <h2>Contact</h2>
-      <p>This should be the contact page, telling you how to contact me.</p>
+      <h2>Blog</h2>
+      <p>Here you should find my blog posts.</p>
     </main>
-
-
-    <div class="footer">
-      <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"> <img alt="CC BY-SA" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a><br>This page is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-    </div>
-
-
   </body>
 </html>
 

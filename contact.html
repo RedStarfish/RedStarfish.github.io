@@ -2,9 +2,9 @@
 <html lang="en">
 
   <head>
-    <title>Red Starfish's Personal Site </title>
+    <title>Red Starfish's Webpage</title>
     <link rel='stylesheet'  type='text/css' href='style.css'>
-    <link rel="icon"  type="image/png" href="starfish.png">
+    <link rel="icon"  type="image/png" href="pix/starfish.png">
     <meta name="keywords" content="starfish, redstarfish">
     <meta charset="UTF-8">
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
@@ -12,11 +12,13 @@
   
   <body>
 
-    <h1 class="header">Welcome to Red Starfish's personal website</h1>
+    <h1 class="header">Red Starfish's Webpage</h1>
+    <img src="pix/starfish.png" style="max-width: 50%;margin: auto; display: block;" alt="Red Starfish" title="Red Starfish">
     <nav class="header">
       <ul>
 	<li><a href="index.html">Home</a></li>
 	<li class="current"><a href="contact.html">Contact</a></li>
+	<li><a href="gnu.html">GNU</a></li>
 	<li><a href="blog.html">Blog</a></li>
 	<li><a href="subscribe.html">Subscribe</a></li>
       </ul>
@@ -24,12 +26,37 @@
 
     <main>
       <h2>Contact</h2>
-      <p>This should be the contact page, telling you how to contact me.</p>
+      <h3>These are following ways you can contact me</h3>
+
+      <details class="faq">
+	<summary>Email</summary>
+	<p>
+	  You can contact me via email. I have two email IDs and also have
+	  PGP key(PGP key will be made available shortly):
+	  <ol>
+	    <li>redstarfish at goat dot si</li>
+	    <li>savenature4all at yandex period com</li>
+	  </ol>
+	</p>
+      </details>
+      <details class="faq">
+	<summary>Social Media</summary>
+	<p>
+	  <ul>
+	    <li><a href="https://joinmastodon.org">Mastodon</a> - I am on Mastodon with the handle
+	      <strong>@redstarfish@social.linux.pizza</strong>.
+	    </li>
+	    <li>Pleroma - I am also on pleroma with the handle @redstarfish@pleroma.site</li>
+	    
+	  </ul>
+	  
+	<p>
+      </details>
     </main>
 
 
     <div class="footer">
-      <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"> <img alt="CC BY-SA" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a><br>This page is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+      This page is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
     </div>
 
 

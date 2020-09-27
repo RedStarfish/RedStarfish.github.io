@@ -1,8 +1,10 @@
 body
 {
     color: black;
-    #background: #CCF;
-    background: #FF91A4;
+    background-color: #FF91A4;
+    background-image: url("pix/construction.gif");
+    background-repeat: no-repeat;
+    background-position: 80% 2%;
 }
 
 
@@ -12,8 +14,24 @@ h1.header
     color: #048;
     color: #DC143C;
     text-align: center;
+    font-style: sans-serif;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 300%;
 }
 
+h2.header
+{
+    text-align: center;
+    font-style: sans-serif;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+h2
+{
+    text-align: center;
+}
 a
 {
     color: #008;
@@ -28,9 +46,16 @@ a:visited
 
 a:hover
 {
-    color: #C08;
+    #color: #C08;
+    color: #FF0000;
     font-weight: bold;
     text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:active
+{
+    background-color: #FFFF00;
 }
 
 nav.header
@@ -85,15 +110,14 @@ nav.header a, nav.header a:hover, nav.header a:visited
 
 nav.header li.current a, nav.header a:hover
 {
-    #background: #04B;
     background: #FF0000;
     box-shadow: 3px 3px black;
 }
 
 main
 {
-    #background: #DDF;
     background: #FF7F7F;
+    text-indent: 30px;
     width: 90%;
     max-width: 60em;
     margin-left: auto;

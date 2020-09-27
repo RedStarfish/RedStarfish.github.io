@@ -10,6 +10,27 @@
     <atom:link href="https://redstarfish.github.io/rss.xml" rel="self" type="application/rss+xml" />
 
     <item>
+      <title>Celebrating GNU's 37th Birthday</title>
+      <link>https://redstarfish.github.io/index.html#birthday</link>
+      <guid>https://redstarfish.github.io/index.html#birthday</guid>
+      <pubDate>Sun, Sep 27, 2020 05:59:00 +0000</pubDate>
+      <description><![CDATA[
+      <h3>Celebrating GNU's 37th Birthday</h3>
+      <img src="pix/birthdaydance.gif" style="float: right;" alt="Birthday Dance" title="Birthday Dance">
+      <p>
+	Today we are celebrating GNU's 37th birthday! 37 years ago, on
+	27th September, 1983, <a href="https://stallman.org">Richard
+	Stallman</a> announced that he'd create a free Unix like
+	operating system<br/>called <strong>GNU</strong> (For <strong>GNU's Not
+	Unix</strong>).
+      </p>
+      <p>
+	See the <a href="http://www.gnu.org/gnu/initial-announcement.html">initial announcement</a>.
+      </p>
+      ]]></description>
+    </item>
+
+    <item>
       <title><![CDATA[Why I have Made This Website]]></title>
       <link>https://redstarfish.github.io/blog/why-i-made-this-website.html</link>
       <guid>https://redstarfish.github.io/blog/why-i-made-this-website.html</guid>

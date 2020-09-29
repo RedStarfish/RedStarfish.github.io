@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Red Starfish's Webpage</title>
+    <link rel='stylesheet'  type='text/css' href='../style.css'>
+    <link rel="icon"  type="image/png" href="../pix/starfish.png">
+    <meta name="keywords" content="starfish, redstarfish">
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+  </head>
+  
+  <body>
+
+    <h1 class="header">Red Starfish's Webpage</h1>
+    <img src="../pix/starfish.png" style="max-width: 50%;margin: auto; display: block;" alt="Red Starfish" title="Red Starfish">
+    <nav class="header">
+      <ul>
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../contact.html">Contact</a></li>
+	<li><a href="../gnu.html">GNU</a></li>
+	<li class="current"><a href="../blog.html">Blog</a><li>
+	<li><a href="../subscribe.html">Subscribe</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>From LXDE To Openbox Then Back To LXDE/Openbox </h2>
+      <h3>Author: Red Starfish</h3>
+      <h4>Date: 29th September, 2020</h4>
+
+      <img src="../pix/lxde-icon.png" style="max-width: 50%;margin: auto; display: block;" alt="LXDE Icon" title="LXDE-Icon">
+      <div class="blog">
+
+	<h3 id="intro">First Interactions with LXDE</h3>
+	
+	<p>
+	  My first experience
+	  with <a href="https://www.lxde.org/">LXDE</a> (By default
+	  LXDE uses Openbox but you don't get the right click menu,
+	  autostart or enviroment that defines openbox) came with
+	  <a href="https://trisquel.info">Trisquel Mini</a>. I wanted
+	  to use Trisquel(8) and it came with two editions MATE and
+	  LXDE. I saw no point in installing Trisquel using a larger
+	  ISO when I was going to customize it, use my own choice of
+	  applications and not going to use the default ones provided
+	  as default by Trisquel. Also I knew that what desktop
+	  enviroment comes pre-installed doesn't matter because I can
+	  always install the one I want, later.
+	</p>
+	<p>
+	  So, I went with LXDE edition, thinking that I'd install XFCE
+	  later after installation. But when using XFCE, I kept coming
+	  back to LXDE (with Trisquel theme) mainly because it was
+	  lightweight and felt snappier. I also changed some
+	  keybindings to suit my needs. But few things I liked (and
+	  still like) from XFCE were:
+	  <ul>
+	    <li>xfce4-appfinder</li>
+	    <li>xfce4-notifyd</li>
+	    <li>xfce4-pulseaudio-plugin - <em>Really useful</em></li>
+	    <li>xfce4-screenshooter</li>
+	  </ul>
+	  
+	  So while using LXDE (trisquel themed), I was using used some
+	  components from xfce4 too.
+	</p>
+	
+	<p>
+	  After few months as Trisquel 8 was getting really old, I
+	  decided to move to <a href="https://parabola.nu">Parabola
+	  GNU/Linux-libre</a> (Note: If you want to use Trisquel, you
+	  should install Trisquel 9). Here my first instinct again was
+	  to install LXDE, but after installation I didn't like it. So
+	  I immediately installed xfce4 again. I was really surprised
+	  how much progress it had gone through in the last 3-4
+	  years. But I became increasingly frustrated as my preferred
+	  keybindings (which I created while using Trisquel) were not
+	  there, so I started using LXDE again with above mentioned
+	  xfce4 programs.
+	</p>
+
+	<h3 id="openbox">From LXDE To Openbox</h3>
+	<p>
+	  While above mentioned things were happening, I tried using
+	  the vanilla Openbox few times, but as it's so minimalist and
+	  I didn't know what additional softwares to use, I exited
+	  Openbox within 5 minutes everytime logged into a
+	  openbox-session.
+	</p>
+	<p>
+	  Then I found this really great
+	  <a href="https://fedoramagazine.org/openbox-fedora/">Fedora
+	    Magazine article</a>. This helped me a lot to move towards
+	    using Openbox. Openbox session became usable to me.
+	</p>
+	<p>
+	  One thing I noticed, standalone LXDE programs were making
+	  openbox more complete but few things weren't working out for
+	  me in Openbox, for example:
+	  <ul>
+	    <li>Screen wasn't locking immediately after I closed the
+	      Laptop lid.</li>
+	    <li>
+	      No Trash support.
+	    </li>
+	    <li>
+	      External drive wasn't mounting automatically, I needed to
+	      use CLI and become root to work with external drive. Even
+	      root couldn't change the permissions or ownership of the
+	      files in the external drives.
+	    </li>
+	  </ul>
+
+	  So these things kept bugging me. On one hand, I wanted to go
+	  back to LXDE and on the other, I liked the tint2 panel
+	  instead of lxpanel, I wanted the right click menu of
+	  openbox, nitrogen for setting wallpapers etc.
+	</p>
+	<h3 id="lxde-openbox">Using LXDE/Openbox</h3>
+	<p>
+	  I decided to go back to LXDE (lxsession) but with a twist. 
+	</p>
+	<p>
+	  To use my preferred panel and get back the Openbox's right
+	  click menu, I found that these things are being controlled
+	  by LXDE's autostart file. This file is located at
+	  <code>
+	    /home/user/.config/lxsession/LXDE/autostart
+	  </code>.  Once I got to this file, stripping things were
+	  very easy. LXDE's right click and wallpaper is controlled by
+	  pcmanfm in desktop mode. I changed it to daemon mode. That
+	  way I got back Openbox's right click menu.
+	</p>
+	
+	<p>
+	  I removed the lxpanel and replaced with tint2. This way, I
+	  could use tint2 in LXDE instead having to lxpanel.
+	</p>
+
+	<h3 id="conclusion">Conclusion</h3>
+	<p>
+	  So, this is the long tale of how I've found the desktop the
+	  way I want. Which is the full functionality of Openbox
+	  complemented by LXDE programs.
+	</p>
+	<img src="../pix/mydesktop.jpg" style="max-width: 50%;margin: auto; display: block;" alt="My Desktop" title="My Desktop">
+	
+	<h3 id="helping">Helping You</h3>
+	<p>
+	  If you want to have your desktop just like I have. Do the
+	  following:
+	  <ul>
+	    <li>
+	      Clone my Dotfiles repository. Here you'll find all
+	      the necessary configuration files.<br/>
+	      <code>$ git clone
+		https://codeberg.org/Red_Starfish/My_Dotfiles.git</code>
+	      
+	    </li>
+	    <br/>
+	    <li>
+	      In the openbox directory, you'll find the following files:
+	      <ol>
+		<li>lxde-rc.xml - Put it in
+		  <code>~/.config/openbox/lxde-rc.xml</code></li>
+		<li>menu.xml - Put it in <code>~/.config/openbox/menu.xml</code></li>
+		<li>autostart - Put it in
+		  <code>~/.config/lxsession/LXDE/autostart</code></li>
+		<li>tint2rc - Put it
+		  in <code>~/.config/tint2/tint2rc</code> 
+		  <br/>
+		  (make sure you have tint2 installed though.)</li>
+	      </ol>
+	    </li>
+	    <br/>
+	    <li>You will find some awesome wallpapers from here:<br/>
+	      <code>
+		$ git clone https://gitlab.com/dwt1/wallpapers.git
+	      </code>
+	      <br/><br/>You'll need something like nitrogen to set wallpapers.
+	    </li>
+	    <br/>
+	    <li>
+	      Next time you login, login to LXDE session.
+	    </li>
+	  </ul>
+	</p>
+      </div>
+    </main>
+    <div class="footer">
+      This page is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+    </div>
+  </body>
+
+</html>

@@ -1,18 +1,12 @@
 body
 {
-    color: black;
-    background-color: #FF91A4;
-    background-image: url("pix/construction.gif");
-    background-repeat: no-repeat;
-    background-position: 80% 2%;
+    background-color: black;
+    color: white;
 }
-
-
 
 h1.header
 {
-    #color: #048;
-    color: #DC143C;
+    color: blue;
     text-align: center;
     font-style: sans-serif;
     font-weight: bold;
@@ -20,31 +14,15 @@ h1.header
     font-size: 300%;
 }
 
-h2.header
-{
-    text-align: center;
-    font-style: sans-serif;
-    font-weight: bold;
-    font-size: 200%;
-}
-
 h2
 {
     text-align: center;
+    color: green;
 }
 
-.blog
-{
-    margin-top: 100px;
-
-}
-code
-{
-   # margin-left: 10%;
-}
 a
 {
-    color: #008;
+    color: red;
     font-weight: bold;
     text-decoration: underline;
 }
@@ -56,21 +34,15 @@ a:visited
 
 a:hover
 {
-    #color: #C08;
     color: #FF0000;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-a:active
-{
-    background-color: #FFFF00;
-}
-
 nav.header
 {
-    background: #960018 ;
+    background: blue;
     #background: #c;
     border-style: hidden;
     border-radius: 12px;
@@ -96,7 +68,6 @@ nav.header ul
     padding-left: 0px;
     padding-right: 0px;
 }
-
 nav.header li
 {
     display: inline;
@@ -126,53 +97,23 @@ nav.header li.current a, nav.header a:hover
 
 main
 {
-    background: #FF7F7F;
+    background: black;
     text-indent: 30px;
     width: 90%;
     max-width: 40em;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 4px;
-    padding-bottom: 10%;
+    #padding-left: 15%;
+    #padding-right: 15%;
+    #padding-top: 4px;
+    #padding-bottom: 10%;
     overflow: auto;
 }
 
-.floating
+.blog
 {
-    float: right;
-    max-width: 40%;
-    padding-left: 16px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    margin-top: 100px;
 }
-
-.gameslist
-{
-    width: 100%;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    overflow: auto;
-    font-size: x-large;
-    text-align: center;
-}
-
-.gameslist img
-{
-    display: block;
-    float: left;
-    width: 24%;
-    margin-left: 0.5%;
-    margin-right: 0.5%;
-    margin-top: 0.5%;
-    margin-bottom: 0.5%;
-}
-
-
-
 .footer
 {
     width: 100%;
@@ -180,22 +121,3 @@ main
     text-align: center;
 }
 
-details.faq summary
-{
-    color: #008;
-    font-weight: bold;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-details.faq summary:hover
-{
-    color: #C08;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-aside.footnotes ol
-{
-    font-size: smaller;
-}
